@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.2.13)  13 FEB 2018 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.12)  13 APR 2018 11:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**vinit_kumar.tex
-(./vinit_kumar.tex
+**saurabh_bajaj.tex
+(./saurabh_bajaj.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 22 language(s) loaded.
 (/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/article.cls
@@ -118,8 +118,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 LaTeX Warning: Unused global option(s):
     [9pt].
 
-(./vinit_kumar.aux)
-\openout1 = `vinit_kumar.aux'.
+(./saurabh_bajaj.aux)
+\openout1 = `saurabh_bajaj.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
@@ -148,33 +148,63 @@ LaTeX Font Info:    ... okay on input line 73.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks20
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 123.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 136.
 
  (/usr/local/texlive/2017basic/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 136.
+
+! Misplaced alignment tab character &.
+l.171 ...ocoa, AFNetworking, Fabrics(Crashlytics &
+                                                   Answers), Firebase, Realm...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+! LaTeX Error: \begin{list} on input line 198 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1
 
 {/usr/local/texlive/2017basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./vinit_kumar.aux) ) 
+(./saurabh_bajaj.aux) )
+(\end occurred inside a group at level 3)
+
+### semi simple group (level 3) entered at line 198 (\begingroup)
+### semi simple group (level 2) entered at line 198 (\begingroup)
+### semi simple group (level 1) entered at line 198 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
  1880 strings out of 494437
- 23392 string characters out of 6166645
+ 23410 string characters out of 6166645
  82678 words of memory out of 5000000
  5252 multiletter control sequences out of 15000+600000
  5553 words of font info for 20 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 27i,5n,26p,262b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017basic/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2017basic/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017basic/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017basic/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on vinit_kumar.pdf (1 page, 92445 bytes).
+ 27i,5n,26p,229b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017basic/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2017basic/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017basic/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017basic/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on saurabh_bajaj.pdf (1 page, 90700 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream

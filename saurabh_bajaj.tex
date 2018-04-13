@@ -1,0 +1,219 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+    \begin{changemargin}{-0.05in}{-0.05in}
+        \vspace*{-8pt}
+        \hrulefill \\
+        \vspace*{-2pt}
+    \end{changemargin}
+}
+
+\newcommand{\header}[1]{
+    \begin{changemargin}{-0.5in}{-0.5in}
+        \scshape{#1}\\
+    \lineover
+    \end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+    \begin{changemargin}{-0.5in}{-0.5in}
+        \begin{center}
+            {\Large \scshape {#1}}\\ \smallskip
+            {#2}\\ \smallskip
+            {#3}\\ \smallskip
+            {#4}\smallskip
+        \end{center}
+    \end{changemargin}
+}
+
+\newenvironment{body} {
+    \vspace*{-16pt}
+    \begin{changemargin}{-0.25in}{-0.5in}
+  }
+    {\end{changemargin}
+}
+
+\newcommand{\school}[4]{
+    \textbf{#1} \hfill \emph{#2\\}
+    #3\\
+    #4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Saurabh Bajaj}{saurabhbsd@gmail.com}{+91-8000888022}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{Summary}
+
+\begin{body}
+    \vspace{14pt}
+  Saurabh is an experienced iOS application developer currently working in Pune, India. 
+  He likes to come up with simple solutions to difficult problems. 
+  Code quality, maintainability and pragmatism are his core programming principles.
+  Being an iOS developer, he gives great attention to the UX and UI of the project.
+
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+    \vspace{14pt}
+    \textbf{Master in Computer Applications}{} \hfill \emph{Aug 2013 - Apr 2015}{} \\
+    \emph{University of Pune}, Pune{} \\
+\end{body}
+
+\begin{body}
+    \vspace{14pt}
+    \textbf{Bachelor in Computer Applications}{} \hfill \emph{July 2010 - Apr 2013}{} \\
+    \emph{University of Pune}, Pune{} \\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Certifications}
+
+\begin{body}
+    \vspace{14pt}
+    \textbf{Diploma in iOS Application Development}{} \hfill \emph{June 2014 - Aug 2014}{} \\
+    \emph{Sourcekode Technologies}, Pune{} \\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Career History}
+
+\begin{body}
+    \vspace{14pt}
+    \textbf{Senior iOS Developer}, \emph{Promobi Technologies, Pune} \hfill \emph{Nov 2015 - Present}\\
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Responsible for the complete product life-cycle from design to implementation and App Store release management.
+    \end{itemize}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Good experience with Swift and Objective C.
+    \end{itemize}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Profiling and optimization to enhance efficiency and performance.
+    \end{itemize}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Timely development and delivery of applications with minimal bugs.
+    \end{itemize}
+    \vspace*{-4pt}
+
+    \vspace{14pt}
+    \textbf{iOS Developer Intern}, \emph{Emerson Innovation Center, Pune} \hfill \emph{Jan 2015 - Aug 2015}\\
+    \vspace*{-4pt}
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+        \item Worked on a Bluetooth based application in Objective-C.
+    \end{itemize}
+
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+    \vspace{14pt}
+    \emph{\textbf{Programming Languages:}}{} Swift, Objective-C, C++, C, Python(minor experience)\\
+    \emph{\textbf{Database:}}{} SQLite\\
+    \emph{\textbf{Version Control:}}{} Git\\
+    \emph{\textbf{Libraries and Frameworks:}}{} Cocoa, AFNetworking, Fabrics(Crashlytics & Answers), Firebase, Realm, Alamofire, CoreBluetooth \\
+    \emph{\textbf{Mobile Development:}}{} Native iOS Development and Hybrid(minor experience with react native)\\
+    \emph{\textbf{Operating Systems:}}{} macOS, Windows\\
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Links
+\header{Important links}
+
+\begin{body}
+    \vspace{14pt}
+    \textbf{Github} : https://github.com/saurabhbajajcode \hfill{}\\
+    \smallskip
+    \textbf{Linkedin} : https://www.linkedin.com/in/saurabhbajaj02/ \hfill{}\\
+    \smallskip
+    \textbf{Twitter} : https://twitter.com/saurabhbajaj91 \hfill{}\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{Volunteering Experience}
+
+\begin{body}
+    \vspace{14pt}
+    \textbf{Volunteer, National level Conference} : Sinhgad Institute of Management and Computer Applications, (Pune) \hfill {} \emph{Feb 2015}\\
+    \smallskip
+    % \textbf{Administrator} : Web and DC server, (Bit Mesra) \hfill{} \emph{June 2011- May 2012}\\
+% \end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+% \header{Blog}
+
+% \begin{body}
+%     \vspace{14pt}
+%     Gotchacode \textbf{Tech-blog covering topics related to web and Open Source.} \emph{ https://gotchacode.com}\\
+%     \smallskip
+% \end{body}
+
+\smallskip
+
+\end{document}
