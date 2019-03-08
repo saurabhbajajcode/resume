@@ -12,8 +12,8 @@ https://www.apptic.me/blog/get-mactex-faster-easily-using-basictex.php
 ## Compiling
 
 ```
-texliveonfly vinit_kumar.tex
+texliveonfly saurabh_bajaj.tex
 ```
 
-The above command generates a PDF with name `vinit_kumar.pdf`
-So basically, it would be `vinit_kumar.tex > vinit_kumar.pdf`
+The above command generates a PDF with name `saurabh_bajaj.pdf`
+So basically, it would be `saurabh_bajaj.tex > saurabh_bajaj.pdf`
