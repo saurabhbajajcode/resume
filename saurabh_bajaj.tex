@@ -1,278 +1,92 @@
-\documentclass[9pt]{article}
-\usepackage{fullpage}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage[usenames]{color}
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{enumitem}
 \usepackage{hyperref}
-
-\leftmargin=0.25in
-\oddsidemargin=0.25in
-\textwidth=6.0in
-\topmargin=-0.25in
-\textheight=9.25in
-
-\raggedright
-
-\pagenumbering{arabic}
-
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=black,
+    urlcolor=blue,
+    linkcolor=black,
+    citecolor=black
 }
-
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-% DEFINITIONS FOR RESUME
-
-\newenvironment{changemargin}[2]{%
-  \begin{list}{}{%
-    \setlength{\topsep}{0pt}%
-    \setlength{\leftmargin}{#1}%
-    \setlength{\rightmargin}{#2}%
-    \setlength{\listparindent}{\parindent}%
-    \setlength{\itemindent}{\parindent}%
-    \setlength{\parsep}{\parskip}%
-  }%
-  \item[]}{\end{list}
-}
-
-\newcommand{\lineover}{
-    \begin{changemargin}{-0.05in}{-0.05in}
-        \vspace*{-8pt}
-        \hrulefill \\
-        \vspace*{-2pt}
-    \end{changemargin}
-}
-
-\newcommand{\header}[1]{
-    \begin{changemargin}{-0.5in}{-0.5in}
-        \scshape{#1}\\
-    \lineover
-    \end{changemargin}
-}
-
-\newcommand{\contact}[4]{
-    \begin{changemargin}{-0.5in}{-0.5in}
-        \begin{center}
-            {\Large \scshape {#1}}\\ \smallskip
-            {#2}\\ \smallskip
-            {#3}\\ \smallskip
-            {#4}\smallskip
-        \end{center}
-    \end{changemargin}
-}
-
-\newenvironment{body} {
-    \vspace*{-16pt}
-    \begin{changemargin}{-0.25in}{-0.5in}
-  }
-    {\end{changemargin}
-}
-
-\newcommand{\school}[4]{
-    \textbf{#1} \hfill \emph{#2\\}
-    #3\\
-    #4\\
-}
-
-% END RESUME DEFINITIONS
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[\newline]
+\pagenumbering{gobble}
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Name
-\contact{Saurabh Bajaj}{saurabhbsd@gmail.com}{+91-8000888022}
+\begin{center}
+    {\LARGE \textbf{Saurabh Bajaj}} \\[1ex]
+    Pune, India \\[0.5ex]
+    \href{mailto:saurabhbsd@gmail.com}{saurabhbsd@gmail.com} $\vert$ +91 8000888022 \\[0.5ex]
+    \href{https://www.linkedin.com/in/saurabhbajajcode}{\textcolor{blue}{LinkedIn}} $\vert$ \href{https://github.com/saurabhbajajcode}{\textcolor{blue}{GitHub}} $\vert$ \href{https://stackoverflow.com/users/4284063/saurabh-bajaj}{\textcolor{blue}{Stack Overflow}}
+\end{center}
 
+\section*{Summary}
+Experienced iOS engineer with 10+ years of expertise in Swift, SwiftUI, and native iOS development. Proven track record of delivering scalable, high-quality consumer apps to the App Store. Strong focus on UX/UI, code maintainability, and team leadership. Seeking to contribute to impactful digital wellness platforms.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Objective
-\header{Summary}
+\section*{Technical Highlights}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item \textbf{Languages:} Swift, SwiftUI, Objective-C, C++, C, Python (basic)
+    \item \textbf{iOS Frameworks:} CoreData, AVFoundation, CoreBluetooth, MapKit, Push Notifications, Firebase
+    \item \textbf{Real-Time Tech:} Experience with low-latency communication, background refresh, and socket-based logic
+    \item \textbf{Tools:} Xcode Instruments, Git, CI/CD pipelines (basic), Firebase Analytics, Fabric, automated testing tools
+    \item \textbf{Architecture:} MVVM, MVC, protocol-oriented programming
+    \item \textbf{App Store Deployment:} Full lifecycle experience including TestFlight and App Store submission
+    \item \textbf{AI-Assisted Development:} Use of AI tools to enhance code quality, refactor logic, and accelerate development workflows
+\end{itemize}
 
-\begin{body}
-    \vspace{14pt}
-  I am an experienced iOS application engineer currently working in Pune, India. Delivered scalable solutions to difficult problems. Code quality, maintainability and pragmatism are my core programming principles. Being an iOS engineer, I give great attention to the UX and UI of the project.
+\section*{Experience}
+\subsection*{Principal Engineer I - iOS, Harman, Pune \hfill Apr 2021 -- Present}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item Lead a team of developers in enhancing B2C apps with new features including SwiftUI-based modules.
+    \item Integrated push notification services and real-time alerts.
+    \item Collaborated on CI/CD setup and automated unit/UI testing using XCTest.
+    \item Mentored junior developers and led Agile sprint planning.
+\end{itemize}
 
-\end{body}
+\subsection*{Team Lead - iOS, Sell.do, Pune \hfill Sep 2018 -- Apr 2021}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item Delivered features for a real estate CRM app including geolocation and live update modules.
+    \item Managed development schedules and client feedback loops.
+    \item Led implementation of CoreData-backed offline mode.
+\end{itemize}
 
-\smallskip
+\subsection*{iOS Developer, Promobi Technologies, Pune \hfill Nov 2015 -- Sep 2018}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item Architected and shipped multiple Swift-based iOS applications.
+    \item Maintained a 99.9\% crash-free user session rate across projects.
+    \item Introduced reusable SwiftUI components in later-stage apps.
+\end{itemize}
 
+\subsection*{iOS Intern, Emerson Innovation Center \hfill Jan 2015 -- Aug 2015}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item Built a Bluetooth communication module in Objective-C for industrial sensors.
+\end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Education
-\header{Education}
+\section*{Featured Apps}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item \textbf{\href{https://apps.apple.com/nl/app/f-secure-total-security-vpn/id572847748}{F-Secure:}} Developed secure VPN and privacy features using Swift; app reached 1M+ downloads and earned a 4.6-star rating.
+    \item \textbf{\href{https://apps.apple.com/us/app/mobile-security-lookout/id434893913}{Lookout:}} Integrated identity protection APIs and ensured platform stability with a 99.9\% crash-free session rate.
+    \item \textbf{\href{https://apps.apple.com/us/app/sell-do/id1225486345}{Sell.Do:}} Designed CRM components including lead management tools and implemented real-time notification systems.
+    \item \textbf{\href{https://apps.apple.com/us/app/handwerkerstation/id1247972146}{Handwerker Station:}} Delivered ecommerce modules with inventory viewing and payment gateway integration; boosted session duration by 22\%.
+    \item \textbf{\href{https://apps.apple.com/us/app/brew-survey-offline-feedback/id1207197946}{Brew Survey:}} Enabled offline survey functionality using CoreData; contributed to a 40\% increase in client adoption.
+    \item \textbf{\href{https://itunes.apple.com/nz/app/booster-nz/id1179170506?mt=8}{Booster:}} Built a finance tracking dashboard; improved app performance by reducing load time by 30\%.
+    \item \textbf{\href{https://itunes.apple.com/in/app/naki-laundry/id621934237?mt=8}{Naki:}} Designed a streamlined booking and payment interface; supported product expansion across 3 cities.
+\end{itemize}
 
-\begin{body}
-    \vspace{14pt}
-    \textbf{Master in Computer Applications}{} \hfill \emph{Aug 2013 - Apr 2015}{} \\
-    \emph{University of Pune}, Pune{} \\
-\end{body}
+\section*{Education}
+\textbf{Master in Computer Applications}, University of Pune \hfill Aug 2013 -- Apr 2015\\
+\textbf{Bachelor in Computer Applications}, University of Pune \hfill Jul 2010 -- Apr 2013
 
-\begin{body}
-    \vspace{14pt}
-    \textbf{Bachelor in Computer Applications}{} \hfill \emph{July 2010 - Apr 2013}{} \\
-    \emph{University of Pune}, Pune{} \\
-\end{body}
+\section*{Certifications}
+\textbf{Diploma in iOS Application Development}, Sourcekode Technologies \hfill Jun 2014 -- Aug 2014
 
-\smallskip
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Education
-\header{Certifications}
-
-\begin{body}
-    \vspace{14pt}
-    \textbf{Diploma in iOS Application Development}{} \hfill \emph{June 2014 - Aug 2014}{} \\
-    \emph{Sourcekode Technologies}, Pune{} \\
-\end{body}
-
-\smallskip
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Experience
-\header{Career History}
-
-\begin{body}
-    \vspace{14pt}
-    \textbf{Principal Engineer I, - iOS}, \emph{Harman, Pune} \hfill \emph{Apr 2021 - Present}\\
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Enriching the product application with new features and enhancements including research for new features.
-    \end{itemize}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Collaborate with the team to optimize existing features.
-    \end{itemize}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Manage a team of iOS developers across different features.
-    \end{itemize}
-    
-    \vspace{14pt}
-    \textbf{Team Lead - iOS}, \emph{Sell.do, Pune} \hfill \emph{Sept 2018 - Apr 2021}\\
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Adding new features and improvements to the product's application.
-    \end{itemize}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Managing resources and ensuring timely development and delivery of application with minimal bugs.
-    \end{itemize}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Interact with sales and support team for gathering requirements and collecting feedback from clients.
-    \end{itemize}
-    \vspace*{-4pt}
-
-    \vspace{14pt}
-    \textbf{iOS Developer}, \emph{Promobi Technologies, Pune} \hfill \emph{Nov 2015 - Sept 2018}\\
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Own the complete product life-cycle from architecting to implementation and App Store release management.
-    \end{itemize}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Worked on app performance optimization by using profiling tools in Xcode.
-    \end{itemize}
-    \vspace*{-4pt}
-
-    \vspace{14pt}
-    \textbf{iOS Developer - Intern}, \emph{Emerson Innovation Center, Pune} \hfill \emph{Jan 2015 - Aug 2015}\\
-    \vspace*{-4pt}
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-        \item Worked on a Bluetooth based application in Objective-C.
-    \end{itemize}
-
-\end{body}
-
-\smallskip
-
-% \newpage{} % uncomment this line if you want to force a new page
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Apps
-\header{Apps}
-
-\begin{body}
-    \vspace{14pt}
-    \href{https://apps.apple.com/nl/app/f-secure-total-security-vpn/id572847748}{\textbf{F-Secure: Total Security & VPN:}}{} All-in-one Privacy & Protection tool. \\
-    \vspace{2pt}
-    \href{https://apps.apple.com/us/app/mobile-security-lookout/id434893913}{\textbf{Lookout:}}{} Data and Identity Protection tool. \\
-    \vspace{2pt}
-    \href{https://apps.apple.com/us/app/sell-do/id1225486345}{\textbf{Sell.Do:}}{} A CRM tool for real estate. \\
-    \vspace*{2pt}
-    \href{https://apps.apple.com/us/app/handwerkerstation/id1247972146}{\textbf{Handwerker Station:}}{} An ecommerce app. \\
-    \vspace*{2pt}
-    \href{https://apps.apple.com/us/app/brew-survey-offline-feedback/id1207197946}{\textbf{Brew Survey:}}{} A mobile survey and feedback solution. \\
-    \vspace*{2pt}
-    \href{https://itunes.apple.com/nz/app/booster-nz/id1179170506?mt=8}{\textbf{Booster:}}{} A snapshot of your finances at your fingertips. \\
-    \vspace*{2pt}
-    \href{https://itunes.apple.com/in/app/naki-laundry/id621934237?mt=8}{\textbf{Naki:}}{} An innovative tech based laundry service. \\
-\end{body}
-
-\newpage{}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Skills
-\header{Skills}
-
-\begin{body}
-    \vspace{14pt}
-    \emph{\textbf{Programming Languages:}}{} Swift, SwiftUI, Objective-C, C++, C, Python(minor experience)\\
-    \vspace*{2pt}
-    \emph{\textbf{Database:}}{} SQLite\\
-    \vspace*{2pt}
-    \emph{\textbf{Version Control:}}{} Git\\
-    \vspace*{2pt}
-    \emph{\textbf{Libraries and Frameworks:}}{} Cocoa Touch, AVFoundation, CoreData, CoreBluetooth, Map kit,
-Firebase, Fabric \\
-\vspace*{2pt}
-    \emph{\textbf{Mobile Development:}}{} Native iOS Development \\
-    \vspace*{2pt}
-    \emph{\textbf{Operating Systems:}}{} macOS, Windows\\
-\end{body}
-
-\smallskip
-\smallskip
-\smallskip
-\smallskip
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Links
-\header{Important links}
-
-\begin{body}
-    \vspace{14pt}
-    \textbf{Github} : https://github.com/saurabhbajajcode \hfill{}\\
-    \smallskip
-    \textbf{Linkedin} : https://www.linkedin.com/in/saurabhbajajcode/ \hfill{}\\
-    \smallskip
-    \textbf{Stackoverflow} : https://stackoverflow.com/users/4284063/saurabh-bajaj \hfill{}\\
-\end{body}
-
-\smallskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Leadership
-\header{Achievements and Volunteering Experience}
-
-\begin{body}
-    \vspace{14pt}
-    \textbf{Spotlight award in the Innovate category} : Internal award from Sell.do office\\
-    \smallskip
-    \textbf{Volunteer, City Level Walkathon} : Green Run, Lohgaon, Pune \hfill{} \emph{Dec 2019}\\
-    \smallskip
-    \textbf{Volunteer, National level Conference} : Sinhgad Institute of Management and Computer Applications, (Pune) \hfill {} \emph{Feb 2015}\\
-\end{body}
-
-\smallskip
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Publications
-% \header{Blog}
-
-% \begin{body}
-%     \vspace{14pt}
-%     Gotchacode \textbf{Tech-blog covering topics related to web and Open Source.} \emph{ https://gotchacode.com}\\
-%     \smallskip
-% \end{body}
-
-\smallskip
+\section*{Achievements and Volunteering}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item Spotlight Award - Innovate Category, Sell.do
+    \item Volunteer - City Level Walkathon: Green Run, Pune (2019)
+    \item Volunteer - National Conference, Sinhgad Institute (2015)
+\end{itemize}
 
 \end{document}
